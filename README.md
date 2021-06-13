@@ -31,11 +31,6 @@ Rscript corr.r Omni_new.vs.THS50nM.bed.cov Omni_new FFPE
 bedtools multicov -bams trim_kidney_1.bam.sort.rmdup.bam trim_kidney_2.bam.sort.rmdup.bam -bed FFPE_ATAC.bed > FFPE_ATAC.bed.cov
 Rscript corr_dup.r FFPE_ATAC.bed.cov
 ```
-### footprint.r
-- CTCF footprint calculation
-```shell
-Rscript footprint.r Kidney_SD_ATAC_1.rmdup.bam SD_1 SD_1 
-```
 ### fragment_length_dist.pl
 - get the fragment length distribution
 ```shell
